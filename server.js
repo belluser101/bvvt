@@ -53,7 +53,11 @@ const allowedOrigins = [
   'https://welsh.ct.ws',
   'http://welsh.ct.ws',
   'https://walsh.ct.ws',
-  'http://walsh.ct.ws'
+  'http://walsh.ct.ws',
+  'https://sesi.ct.ws',
+  'http://sesi.ct.ws',
+  'https://sisin.ct.ws',
+  'http://sisin.ct.ws'
    // add all your trusted frontends here
 ];
 
