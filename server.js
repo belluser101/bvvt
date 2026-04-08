@@ -13,6 +13,7 @@ const allowedOrigins = [
   'http://localhost:5173/',
   'https://gnaxd.vercel.app',
   'https://obbell.vercel.app',
+  'https://thebellbusiness.vercel.app',
   'https://phenomenal-malasada-b21773.netlify.app'
    // add all your trusted frontends here
 ];
